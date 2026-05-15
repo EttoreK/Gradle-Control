@@ -1,0 +1,145 @@
+[versions] # versão a ser usada de cada biblioteca ou plugin seguida pela fonte de origem
+
+# [gradle]
+gradleVer = "9.5.1" # Versão do Gradle em uso
+
+# [java]
+javaSource = "21" # Versão do JDK em uso
+javaTarget = "21" # Versão do JDK em uso
+sdkCompile = "36" # https://developer.android.com/guide/topics/manifest/uses-sdk-element
+sdkMin = "26" # https://developer.android.com/guide/topics/manifest/uses-sdk-element
+sdkTarget = "36" # https://developer.android.com/guide/topics/manifest/uses-sdk-element
+
+# [swift]
+swift = "6.1" # Versão Swift em uso https://www.swift.org/install
+minIosVer = "15.8.4" # https://endoflife.date/ios https://support.apple.com/en-us/100100
+minMacosVer = "13.7.8" # https://endoflife.date/macos
+archiveVersion = "1" # formato de serialização do arquivo
+objectVersion = "46" # projeto é compatível com Xcode 3.2 ou superior
+schemeVersion = "1.7" # valor mágico determinado pelos engenheiros do XCode
+schemeUpgradeVersion = "1640" # XCode 16.4 -> 1640 https://developer.apple.com/download/all/?q=Xcode
+
+# [desacoplamento de valores mágicos]
+
+valores-android-proguardAndroid = "proguard-android-optimize.txt"
+valores-android-proguardRules = "proguard-rules.pro"
+valores-android-recursosMain = "src/main/resources"
+valores-android-recursosTest = "src/test/resources"
+valores-android-app = ".app"
+valores-android-test = ".test"
+
+valores-buildDir-android = "build/java/android"
+valores-buildDir-buildLogic = "build/build-logic"
+valores-buildDir-cpp = "build/cpp"
+valores-buildDir-java = "build/java"
+valores-buildDir-swift = "build/swift"
+valores-buildDir-xcode = "build/xcode"
+valores-buildDir-web = "build/java/web"
+
+valores-cmd-vm-bash = "/bin/bash"
+valores-cmd-vm-chmod = "/bin/chmod"
+valores-cmd-vm-chown = "/usr/sbin/chown"
+valores-cmd-vm-killall = "/usr/bin/killall"
+valores-cmd-vm-mkdir = "/bin/mkdir"
+valores-cmd-vm-open = "/usr/bin/open"
+valores-cmd-vm-rm = "/bin/rm"
+valores-cmd-vm-sudo = "/usr/bin/sudo"
+valores-cmd-vm-swift = "/usr/bin/swift"
+valores-cmd-vm-xcrun = "/usr/bin/xcrun"
+
+valores-ext-file = "file."
+valores-ext-gif = "image.gif"
+valores-ext-jpeg = "image.jpeg"
+valores-ext-jpg = "image.jpeg"
+valores-ext-json = "text.json"
+valores-ext-plist = "text.plist.xml"
+valores-ext-png = "image.png"
+valores-ext-storyboard = "file.storyboard"
+valores-ext-swift = "sourcecode.swift"
+valores-ext-xcassets = "folder.assetcatalog"
+valores-ext-xib = "file.xib"
+
+valores-num-proxyType = "1" # tipo de relação 1 - Native Target / 2 - Arquivo
+valores-num-includeInIndex = "0" # 1sim/0não é escaneado pelo motor de indexação
+valores-num-buildActionMask = "2147483647" # número total de bits
+valores-num-runOnlyForDeploymentPostprocessing = "0" # 1sim/0não roda apenas quando em Archive
+valores-num-defaultConfigurationIsVisible = "0" # flag de UI legada
+
+valores-xcodeConfig-bundleUI = "bundle.ui-testing"
+valores-xcodeConfig-bundleUnit = "bundle.unit-test"
+valores-xcodeConfig-bundleApp = "application"
+valores-xcodeConfig-nomeUI = "UITests"
+valores-xcodeConfig-nomeUnit = "UnitTests"
+valores-xcodeConfig-appDir = "src/main/swift"
+valores-xcodeConfig-testeDir = "src/test/swift"
+valores-xcodeConfig-resDir = "src/main/resources"
+
+# [plugins e libraries]
+# https://maven.google.com/web/index.html?#com.android.settings:com.android.settings.gradle.plugin
+androidGradlePlugin = "9.2.1" # https://mvnrepository.com/artifact/com.android.tools.build/gradle
+adrxActivity = "1.13.0" # https://mvnrepository.com/artifact/androidx.activity/activity
+adrxAnnot = "1.10.0" # https://mvnrepository.com/artifact/androidx.annotation/annotation
+adrxAppcompat = "1.7.1" # https://mvnrepository.com/artifact/androidx.appcompat/appcompat
+consLt = "2.2.1" # https://mvnrepository.com/artifact/androidx.constraintlayout/constraintlayout
+jetBsAnnot = "26.1.0" # https://mvnrepository.com/artifact/org.jetbrains/annotations
+jsonJava = "20251224" # https://mvnrepository.com/artifact/org.json/json
+junit = "6.0.3" # https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api
+lifeCycle = "2.10.0" # https://mvnrepository.com/artifact/androidx.lifecycle/lifecycle-common
+material = "1.13.0" # https://mvnrepository.com/artifact/com.google.android.material/material
+mockito = "5.23.0" # https://mvnrepository.com/artifact/org.mockito/mockito-core
+proguard = "7.9.1" # https://mvnrepository.com/artifact/com.guardsquare/proguard-gradle
+springBoot = "4.0.6" # https://mvnrepository.com/artifact/org.springframework.boot/spring-boot
+springDM = "1.1.7" # https://mvnrepository.com/artifact/io.spring.dependency-management/io.spring.dependency-management.gradle.plugin
+toolchain = "1.0.0" # https://plugins.gradle.org/plugin/org.gradle.toolchains.foojay-resolver-convention
+xprssCore = "3.7.0" # https://mvnrepository.com/artifact/androidx.test.espresso/espresso-core
+
+[libraries] # declaração dos nomes das bibliotecas
+adrxActivity = { group = "androidx.activity", name = "activity", version.ref = "adrxActivity" }
+adrxAnnotation = { group = "androidx.annotation", name = "annotation", version.ref = "adrxAnnot" }
+adrxAppcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "adrxAppcompat" }
+consLt = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "consLt" }
+jetBsAnnot = { group = "org.jetbrains", name = "annotations", version.ref = "jetBsAnnot" }
+jsonJava = { group = "org.json", name = "json", version.ref = "jsonJava" }
+junitAPI = { group = "org.junit.jupiter", name = "junit-jupiter-api", version.ref = "junit" }
+junitEngine = { group = "org.junit.jupiter", name = "junit-jupiter-engine", version.ref = "junit" }
+junitPlt = { group = "org.junit.platform", name = "junit-platform-launcher", version.ref = "junit" }
+lifeCycle = { group = "androidx.lifecycle", name = "lifecycle-common", version.ref = "lifeCycle" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+mockitoCore = { group = "org.mockito", name = "mockito-core", version.ref = "mockito" }
+mockitoJunit = { group = "org.mockito", name = "mockito-junit-jupiter", version.ref = "mockito" }
+proguard = { group = "com.guardsquare", name = "proguard-gradle", version.ref = "proguard" }
+spBtStrThy = { group = "org.springframework.boot", name = "spring-boot-starter-thymeleaf", version.ref = "springBoot" }
+spBtStrTom = { group = "org.springframework.boot", name = "spring-boot-starter-tomcat", version.ref = "springBoot" }
+spBtStrTest = { group = "org.springframework.boot", name = "spring-boot-starter-test", version.ref = "springBoot" }
+spBtStrTestMvc = { group = "org.springframework.boot", name = "spring-boot-starter-webmvc-test", version.ref = "springBoot" }
+spBtStrWeb = { group = "org.springframework.boot", name = "spring-boot-starter-web", version.ref = "springBoot" }
+xprssCore = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "xprssCore" }
+
+[plugins] # declaração dos plugins
+androidApp = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+androidBib = { id = "com.android.library", version.ref = "androidGradlePlugin" }
+buildLogicAndroidActions = { id = "build-logic.android-actions" }
+buildLogicAndroidApp = { id = "build-logic.android-app" }
+buildLogicAndroidGeral = { id = "build-logic.android-geral" }
+buildLogicCppActions = { id = "build-logic.cpp-actions" }
+buildLogicCppApp = { id = "build-logic.cpp-app" }
+buildLogicCppGeral = { id = "build-logic.cpp-geral" }
+buildLogicJavaActions = { id = "build-logic.java-actions" }
+buildLogicJavaApp = { id = "build-logic.java-app" }
+buildLogicJavaBib = { id = "build-logic.java-bib" }
+buildLogicJavaGeral = { id = "build-logic.java-geral" }
+buildLogicJavaWeb = { id = "build-logic.java-web" }
+buildLogicXcodeActions = { id = "build-logic.xcode-actions" }
+buildLogicXcodeGeral = { id = "build-logic.xcode-geral" }
+buildLogicXcodeApp = { id = "build-logic.xcode-app" }
+cppApp = { id = "cpp-application" }
+cppUnitTest = { id = "cpp-unit-test" }
+groovyGradle = { id = "groovy-gradle-plugin" }
+javaApp = { id = "java" }
+javaBib = { id = "java-library" }
+springBoot = { id = "org.springframework.boot", version.ref = "springBoot" }
+springDM = { id = "io.spring.dependency-management", version.ref = "springDM" }
+swiftApp = { id = "swift-application" } # apps Swift (incompativel com gradle 9 [11/2025])
+toolchain = { id = "org.gradle.toolchains.foojay-resolver-convention", version.ref = "toolchain" }
+xcodeProj = { id = "xcode" }
+xcTest = { id = "xctest" } # adiciona suporte a testes unitários, não funciona com testes de UI
