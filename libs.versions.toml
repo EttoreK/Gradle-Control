@@ -78,12 +78,15 @@ valores-xcodeConfig-resDir = "src/main/resources"
 # https://maven.google.com/web/index.html?#com.android.settings:com.android.settings.gradle.plugin
 androidGradlePlugin = "9.2.1" # https://mvnrepository.com/artifact/com.android.tools.build/gradle
 adrxActivity = "1.13.0" # https://mvnrepository.com/artifact/androidx.activity/activity
-adrxAnnot = "1.10.0" # https://mvnrepository.com/artifact/androidx.annotation/annotation
+adrxAnnotat = "1.10.0" # https://mvnrepository.com/artifact/androidx.annotation/annotation
 adrxAppcompat = "1.7.1" # https://mvnrepository.com/artifact/androidx.appcompat/appcompat
+adrxTestCore = "1.7.0" # https://mvnrepository.com/artifact/androidx.test/core
+adrxTestExtJunit = "1.3.0" # https://mvnrepository.com/artifact/androidx.test.ext/junit
+adrxTestRules = "1.7.0" # https://mvnrepository.com/artifact/androidx.test/rules 
 consLt = "2.2.1" # https://mvnrepository.com/artifact/androidx.constraintlayout/constraintlayout
 jetBsAnnot = "26.1.0" # https://mvnrepository.com/artifact/org.jetbrains/annotations
-jsonJava = "20251224" # https://mvnrepository.com/artifact/org.json/json
-junit = "6.0.3" # https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api
+jsonJava = "20260522" # https://mvnrepository.com/artifact/org.json/json
+junit = "6.1.0" # https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api
 lifeCycle = "2.10.0" # https://mvnrepository.com/artifact/androidx.lifecycle/lifecycle-common
 material = "1.14.0" # https://mvnrepository.com/artifact/com.google.android.material/material
 mockito = "5.23.0" # https://mvnrepository.com/artifact/org.mockito/mockito-core
@@ -95,8 +98,11 @@ xprssCore = "3.7.0" # https://mvnrepository.com/artifact/androidx.test.espresso/
 
 [libraries] # declaração dos nomes das bibliotecas
 adrxActivity = { group = "androidx.activity", name = "activity", version.ref = "adrxActivity" }
-adrxAnnotation = { group = "androidx.annotation", name = "annotation", version.ref = "adrxAnnot" }
+adrxAnnotat = { group = "androidx.annotation", name = "annotation", version.ref = "adrxAnnotat" }
 adrxAppcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "adrxAppcompat" }
+adrxTestCore = { group = "androidx.test", name = "core", version.ref = "adrxTestCore" }
+adrxTestExtJunit = { group = "androidx.test.ext", name = "junit", version.ref = "adrxTestExtJunit" }
+adrxTestRules = { group = "androidx.test", name = "rules", version.ref = "adrxTestRules" }
 consLt = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "consLt" }
 jetBsAnnot = { group = "org.jetbrains", name = "annotations", version.ref = "jetBsAnnot" }
 jsonJava = { group = "org.json", name = "json", version.ref = "jsonJava" }
