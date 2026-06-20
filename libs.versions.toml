@@ -11,7 +11,7 @@ sdkMin = "26" # https://developer.android.com/guide/topics/manifest/uses-sdk-ele
 sdkTarget = "36" # https://developer.android.com/guide/topics/manifest/uses-sdk-element
 
 # [swift/xcode]
-swift = "6.1" # Versão Swift em uso https://www.swift.org/install
+swift = "6.3.1" # Versão Swift em uso https://www.swift.org/install
 minIosVer = "15.8.4" # https://endoflife.date/ios https://support.apple.com/en-us/100100
 minMacosVer = "13.7.8" # https://endoflife.date/macos
 archiveVersion = "1" # formato de serialização do arquivo
@@ -36,7 +36,7 @@ lifeCycle = "2.10.0" # https://mvnrepository.com/artifact/androidx.lifecycle/lif
 material = "1.14.0" # https://mvnrepository.com/artifact/com.google.android.material/material
 mockito = "5.23.0" # https://mvnrepository.com/artifact/org.mockito/mockito-core
 proguard = "7.9.1" # https://mvnrepository.com/artifact/com.guardsquare/proguard-gradle
-springBoot = "4.0.6" # https://mvnrepository.com/artifact/org.springframework.boot/spring-boot
+springBoot = "4.1.0" # https://mvnrepository.com/artifact/org.springframework.boot/spring-boot
 springDM = "1.1.7" # https://mvnrepository.com/artifact/io.spring.dependency-management/io.spring.dependency-management.gradle.plugin
 toolchain = "1.0.0" # https://plugins.gradle.org/plugin/org.gradle.toolchains.foojay-resolver-convention
 xprssCore = "3.7.0" # https://mvnrepository.com/artifact/androidx.test.espresso/espresso-core
