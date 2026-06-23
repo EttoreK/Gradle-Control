@@ -1,7 +1,7 @@
 [versions] # versão a ser usada de cada biblioteca ou plugin seguida pela fonte de origem
 
 # [gradle]
-gradleVer = "9.5.1" # Versão do Gradle em uso
+gradleVer = "9.6.0" # Versão do Gradle em uso
 
 # [java]
 javaSource = "21" # Versão do JDK em uso
@@ -22,24 +22,24 @@ schemeUpgradeVersion = "1640" # XCode 16.4 -> 1640 https://developer.apple.com/d
 # [plugins e libraries]
 # https://maven.google.com/web/index.html?#com.android.settings:com.android.settings.gradle.plugin
 androidGradlePlugin = "9.2.1" # https://mvnrepository.com/artifact/com.android.tools.build/gradle
-adrxActivity = "1.13.0" # https://mvnrepository.com/artifact/androidx.activity/activity
-adrxAnnotat = "1.10.0" # https://mvnrepository.com/artifact/androidx.annotation/annotation
-adrxAppcompat = "1.7.1" # https://mvnrepository.com/artifact/androidx.appcompat/appcompat
-adrxTestCore = "1.7.0" # https://mvnrepository.com/artifact/androidx.test/core
-adrxTestExtJunit = "1.3.0" # https://mvnrepository.com/artifact/androidx.test.ext/junit
-adrxTestRules = "1.7.0" # https://mvnrepository.com/artifact/androidx.test/rules 
-consLt = "2.2.1" # https://mvnrepository.com/artifact/androidx.constraintlayout/constraintlayout
+adrxActivity = "1.13.0" # https://developer.android.com/jetpack/androidx/releases/activity
+adrxAnnotat = "1.10.0" # https://developer.android.com/jetpack/androidx/releases/annotation
+adrxAppcompat = "1.7.1" # https://developer.android.com/jetpack/androidx/releases/appcompat
+adrxLifeCycle = "2.11.0" # https://developer.android.com/jetpack/androidx/releases/lifecycle
+adrxTestCore = "1.7.0" # https://developer.android.com/jetpack/androidx/releases/test (core)
+adrxTestEspresso = "3.7.0" # https://developer.android.com/jetpack/androidx/releases/test (espresso)
+adrxTestExtJunit = "1.3.0" # https://developer.android.com/jetpack/androidx/releases/test (ext.junit)
+adrxTestRules = "1.7.0" # https://developer.android.com/jetpack/androidx/releases/test (rules)
+adrxConstLt = "2.2.1" # https://developer.android.com/jetpack/androidx/releases/constraintlayout
 jetBsAnnot = "26.1.0" # https://mvnrepository.com/artifact/org.jetbrains/annotations
 jsonJava = "20260522" # https://mvnrepository.com/artifact/org.json/json
 junit = "6.1.0" # https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api
-lifeCycle = "2.10.0" # https://mvnrepository.com/artifact/androidx.lifecycle/lifecycle-common
 material = "1.14.0" # https://mvnrepository.com/artifact/com.google.android.material/material
 mockito = "5.23.0" # https://mvnrepository.com/artifact/org.mockito/mockito-core
 proguard = "7.9.1" # https://mvnrepository.com/artifact/com.guardsquare/proguard-gradle
 springBoot = "4.1.0" # https://mvnrepository.com/artifact/org.springframework.boot/spring-boot
 springDM = "1.1.7" # https://mvnrepository.com/artifact/io.spring.dependency-management/io.spring.dependency-management.gradle.plugin
 toolchain = "1.0.0" # https://plugins.gradle.org/plugin/org.gradle.toolchains.foojay-resolver-convention
-xprssCore = "3.7.0" # https://mvnrepository.com/artifact/androidx.test.espresso/espresso-core
 
 [libraries] # declaração dos nomes das bibliotecas
 adrxActivity = { group = "androidx.activity", name = "activity", version.ref = "adrxActivity" }
@@ -48,13 +48,13 @@ adrxAppcompat = { group = "androidx.appcompat", name = "appcompat", version.ref 
 adrxTestCore = { group = "androidx.test", name = "core", version.ref = "adrxTestCore" }
 adrxTestExtJunit = { group = "androidx.test.ext", name = "junit", version.ref = "adrxTestExtJunit" }
 adrxTestRules = { group = "androidx.test", name = "rules", version.ref = "adrxTestRules" }
-consLt = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "consLt" }
+adrxConstLt = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "adrxConstLt" }
 jetBsAnnot = { group = "org.jetbrains", name = "annotations", version.ref = "jetBsAnnot" }
 jsonJava = { group = "org.json", name = "json", version.ref = "jsonJava" }
 junitAPI = { group = "org.junit.jupiter", name = "junit-jupiter-api", version.ref = "junit" }
 junitEngine = { group = "org.junit.jupiter", name = "junit-jupiter-engine", version.ref = "junit" }
 junitPlt = { group = "org.junit.platform", name = "junit-platform-launcher", version.ref = "junit" }
-lifeCycle = { group = "androidx.lifecycle", name = "lifecycle-common", version.ref = "lifeCycle" }
+adrxLifeCycle = { group = "androidx.lifecycle", name = "lifecycle-common", version.ref = "adrxLifeCycle" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 mockitoCore = { group = "org.mockito", name = "mockito-core", version.ref = "mockito" }
 mockitoJunit = { group = "org.mockito", name = "mockito-junit-jupiter", version.ref = "mockito" }
@@ -64,7 +64,7 @@ spBtStrTom = { group = "org.springframework.boot", name = "spring-boot-starter-t
 spBtStrTest = { group = "org.springframework.boot", name = "spring-boot-starter-test", version.ref = "springBoot" }
 spBtStrTestMvc = { group = "org.springframework.boot", name = "spring-boot-starter-webmvc-test", version.ref = "springBoot" }
 spBtStrWeb = { group = "org.springframework.boot", name = "spring-boot-starter-web", version.ref = "springBoot" }
-xprssCore = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "xprssCore" }
+adrxTestEspresso = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "adrxTestEspresso" }
 
 [plugins] # declaração dos plugins
 androidApp = { id = "com.android.application", version.ref = "androidGradlePlugin" }
