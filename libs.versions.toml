@@ -1,7 +1,7 @@
 [versions] # versão a ser usada de cada biblioteca ou plugin seguida pela fonte de origem
 
 # [gradle]
-gradleVer = "9.6.0" # Versão do Gradle em uso
+gradleVer = "9.6.1" # Versão do Gradle em uso https://gradle.org/releases/
 
 # [java]
 javaSource = "21" # Versão do JDK em uso
