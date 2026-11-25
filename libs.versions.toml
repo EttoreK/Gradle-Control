@@ -18,23 +18,22 @@ schemeUpgradeVersion = "1640" # XCode 16.4 -> 1640 https://developer.apple.com/d
 
 # [plugins e libraries]
 # https://maven.google.com/web/index.html?#com.android.settings:com.android.settings.gradle.plugin
-androidGradlePlugin = "9.5.1" # https://mvnrepository.com/artifact/com.android.tools.build/gradle
+androidGradlePlugin = "9.5.2" # https://mvnrepository.com/artifact/com.android.tools.build/gradle
 adrxActivity = "1.13.0" # https://developer.android.com/jetpack/androidx/releases/activity
 adrxAnnotat = "1.11.0" # https://developer.android.com/jetpack/androidx/releases/annotation
-adrxAppcompat = "1.7.1" # https://developer.android.com/jetpack/androidx/releases/appcompat
+adrxAppcompat = "1.8.0" # https://developer.android.com/jetpack/androidx/releases/appcompat
 adrxLifeCycle = "2.11.1" # https://developer.android.com/jetpack/androidx/releases/lifecycle
 adrxTestCore = "1.7.0" # https://developer.android.com/jetpack/androidx/releases/test (core)
 adrxTestEspresso = "3.7.0" # https://developer.android.com/jetpack/androidx/releases/test (espresso)
 adrxTestExtJunit = "1.3.0" # https://developer.android.com/jetpack/androidx/releases/test (ext.junit)
 adrxTestRules = "1.7.0" # https://developer.android.com/jetpack/androidx/releases/test (rules)
 jetBsAnnot = "26.1.0" # https://mvnrepository.com/artifact/org.jetbrains/annotations
-jsonJava = "20260522" # https://mvnrepository.com/artifact/org.json/json
+jsonJava = "20260814" # https://mvnrepository.com/artifact/org.json/json
 junit = "6.1.3" # https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api
 material = "1.14.0" # https://mvnrepository.com/artifact/com.google.android.material/material
 mockito = "5.24.0" # https://mvnrepository.com/artifact/org.mockito/mockito-core
 proguard = "7.10.0" # https://mvnrepository.com/artifact/com.guardsquare/proguard-gradle
 springBoot = "4.2.0" # https://mvnrepository.com/artifact/org.springframework.boot/spring-boot
-springDM = "1.1.7" # https://mvnrepository.com/artifact/io.spring.dependency-management/io.spring.dependency-management.gradle.plugin
 toolchain = "1.0.0" # https://plugins.gradle.org/plugin/org.gradle.toolchains.foojay-resolver-convention
 
 [libraries] # declaração dos nomes das bibliotecas
@@ -54,6 +53,7 @@ material = { group = "com.google.android.material", name = "material", version.r
 mockitoCore = { group = "org.mockito", name = "mockito-core", version.ref = "mockito" }
 mockitoJunit = { group = "org.mockito", name = "mockito-junit-jupiter", version.ref = "mockito" }
 proguard = { group = "com.guardsquare", name = "proguard-gradle", version.ref = "proguard" }
+spBtBootBom = { group = "org.springframework.boot", name = "spring-boot-dependencies", version.ref = "springBoot" }
 spBtStrThy = { group = "org.springframework.boot", name = "spring-boot-starter-thymeleaf", version.ref = "springBoot" }
 spBtStrTom = { group = "org.springframework.boot", name = "spring-boot-starter-tomcat", version.ref = "springBoot" }
 spBtStrTest = { group = "org.springframework.boot", name = "spring-boot-starter-test", version.ref = "springBoot" }
@@ -84,7 +84,6 @@ groovyGradle = { id = "groovy-gradle-plugin" }
 javaApp = { id = "java" }
 javaBib = { id = "java-library" }
 springBoot = { id = "org.springframework.boot", version.ref = "springBoot" }
-springDM = { id = "io.spring.dependency-management", version.ref = "springDM" }
 swiftApp = { id = "swift-application" } # apps Swift (incompativel com gradle 9 [11/2025])
 toolchain = { id = "org.gradle.toolchains.foojay-resolver-convention", version.ref = "toolchain" }
 xcodeProj = { id = "xcode" }
