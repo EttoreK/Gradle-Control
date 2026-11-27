@@ -54,20 +54,18 @@ adrxTestEspresso = { group = "androidx.test.espresso", name = "espresso-core", v
 [plugins] # declaração dos plugins
 androidApp = { id = "com.android.application", version.ref = "androidGradlePlugin" }
 androidBib = { id = "com.android.library", version.ref = "androidGradlePlugin" }
-buildLogicAndroidActions = { id = "build-logic.android-actions" }
-buildLogicAndroidApp = { id = "build-logic.android-app" }
-buildLogicAndroidGeral = { id = "build-logic.android-geral" }
-buildLogicCppActions = { id = "build-logic.cpp-actions" }
-buildLogicCppApp = { id = "build-logic.cpp-app" }
+buildLogicCppDesktopActions = { id = "build-logic.cpp-desktop-actions" }
+buildLogicCppDesktopApp = { id = "build-logic.cpp-desktop-app" }
 buildLogicCppGeral = { id = "build-logic.cpp-geral" }
-buildLogicJavaActions = { id = "build-logic.java-actions" }
-buildLogicJavaApp = { id = "build-logic.java-app" }
-buildLogicJavaBib = { id = "build-logic.java-bib" }
+buildLogicJavaAndroidActions = { id = "build-logic.java-android-actions" }
+buildLogicJavaAndroidApp = { id = "build-logic.java-android-app" }
+buildLogicJavaWebActions = { id = "build-logic.java-web-actions" }
+buildLogicJavaBibActions = { id = "build-logic.java-bib-actions" }
 buildLogicJavaGeral = { id = "build-logic.java-geral" }
-buildLogicJavaWeb = { id = "build-logic.java-web" }
-buildLogicXcodeActions = { id = "build-logic.xcode-actions" }
-buildLogicXcodeGeral = { id = "build-logic.xcode-geral" }
-buildLogicXcodeApp = { id = "build-logic.xcode-app" }
+buildLogicJavaWebApp = { id = "build-logic.java-web-app" }
+buildLogicSwiftDarwinActions = { id = "build-logic.swift-darwin-actions" }
+buildLogicSwiftDarwinGeral = { id = "build-logic.swift-darwin-geral" }
+buildLogicSwiftDarwinApp = { id = "build-logic.swift-darwin-app" }
 cppApp = { id = "cpp-application" }
 cppUnitTest = { id = "cpp-unit-test" }
 groovyGradle = { id = "groovy-gradle-plugin" }
