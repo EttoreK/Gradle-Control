@@ -32,6 +32,8 @@ springBoot = "4.2.0" # https://mvnrepository.com/artifact/org.springframework.bo
 toolchain = "1.0.0" # https://plugins.gradle.org/plugin/org.gradle.toolchains.foojay-resolver-convention
 
 [libraries] # declaração dos nomes das bibliotecas
+androidApp = { group = "com.android.application", name = "com.android.application.gradle.plugin", version.ref = "androidGradlePlugin" }
+androidBib = { group = "com.android.library", name = "com.android.library.gradle.plugin", version.ref = "androidGradlePlugin" }
 adrxTestCore = { group = "androidx.test", name = "core", version.ref = "adrxTestCore" }
 adrxTestExtJunit = { group = "androidx.test.ext", name = "junit", version.ref = "adrxTestExtJunit" }
 adrxTestRules = { group = "androidx.test", name = "rules", version.ref = "adrxTestRules" }
@@ -43,6 +45,7 @@ junitPlt = { group = "org.junit.platform", name = "junit-platform-launcher", ver
 mockitoCore = { group = "org.mockito", name = "mockito-core", version.ref = "mockito" }
 mockitoJunit = { group = "org.mockito", name = "mockito-junit-jupiter", version.ref = "mockito" }
 proguard = { group = "com.guardsquare", name = "proguard-gradle", version.ref = "proguard" }
+springBoot = { group = "org.springframework.boot", name = "org.springframework.boot.gradle.plugin", version.ref = "springBoot" }
 spBtBootBom = { group = "org.springframework.boot", name = "spring-boot-dependencies", version.ref = "springBoot" }
 spBtStrThy = { group = "org.springframework.boot", name = "spring-boot-starter-thymeleaf", version.ref = "springBoot" }
 spBtStrTom = { group = "org.springframework.boot", name = "spring-boot-starter-tomcat", version.ref = "springBoot" }
@@ -57,15 +60,17 @@ androidBib = { id = "com.android.library", version.ref = "androidGradlePlugin" }
 buildLogicCppDesktopActions = { id = "build-logic.cpp-desktop-actions" }
 buildLogicCppDesktopApp = { id = "build-logic.cpp-desktop-app" }
 buildLogicCppGeral = { id = "build-logic.cpp-geral" }
+buildLogicCppWebApp = { id = "build-logic.cpp-web-app" }
+buildLogicCppWebActions = { id = "build-logic.cpp-web-actions" }
 buildLogicJavaAndroidActions = { id = "build-logic.java-android-actions" }
 buildLogicJavaAndroidApp = { id = "build-logic.java-android-app" }
-buildLogicJavaWebActions = { id = "build-logic.java-web-actions" }
 buildLogicJavaBibActions = { id = "build-logic.java-bib-actions" }
 buildLogicJavaGeral = { id = "build-logic.java-geral" }
+buildLogicJavaWebActions = { id = "build-logic.java-web-actions" }
 buildLogicJavaWebApp = { id = "build-logic.java-web-app" }
 buildLogicSwiftDarwinActions = { id = "build-logic.swift-darwin-actions" }
-buildLogicSwiftDarwinGeral = { id = "build-logic.swift-darwin-geral" }
 buildLogicSwiftDarwinApp = { id = "build-logic.swift-darwin-app" }
+buildLogicSwiftDarwinGeral = { id = "build-logic.swift-darwin-geral" }
 cppApp = { id = "cpp-application" }
 cppUnitTest = { id = "cpp-unit-test" }
 groovyGradle = { id = "groovy-gradle-plugin" }
